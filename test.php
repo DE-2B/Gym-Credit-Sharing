@@ -1,10 +1,10 @@
 <?php
-$fullname = $_post['fullname'];
-$email= $_post['email'];
-$password = $_post['password'];
-$gymname = $_post['gymname'];
-$address = $_post['address'];
-$phone= $_post['phone'];
+$fullname = $_POST['fullname'];
+$email= $_POST['email'];
+$password = $_POST['password'];
+$gymname = $_POST['gymname'];
+$address = $_POST['address'];
+$phone= $_POST['phone'];
 
 $conn = new mysqli('localhost','root','','test');
 if($conn->connect_error){

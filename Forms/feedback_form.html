@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Form</title>
+    <style>
+    	/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Feedback Form</h1>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="date">Date of Visit:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="location">Location Visited:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="experience">Overall Experience (1-10):</label>
+      <input type="number" id="experience" name="experience" min="1" max="10" required>
+
+      <label for="cleanliness">Cleanliness of Facilities (1-10):</label>
+      <input type="number" id="cleanliness" name="cleanliness" min="1" max="10" required>
+
+      <label for="staff">Staff Friendliness and Knowledge (1-10):</label>
+      <input type="number" id="staff" name="staff" min="1" max="10" required>
+
+      <label for="equipment">Quality of Equipment (1-10):</label>
+      <input type="number" id="equipment" name="equipment" min="1" max="10" required>
+
+      <label for="fitness-goals">Did you achieve your fitness goals during your visit? (Yes/No):</label><br>
+      <input type="radio" id="yes" name="fitness-goals" value="Yes" required>
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="fitness-goals" value="No">
+      <label for="no">No</label>
+
+      <label for="explanation">If no, please explain:</label>
+      <textarea id="explanation" name="explanation"></textarea>
+
+      <label for="comments">Additional Comments or Suggestions:</label>
+      <textarea id="comments" name="comments"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Feedback Form</title>
+  <style>
+  		body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  margin-top: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  margin-top: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f5;
+  margin-top: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit{
+text-align: center;   
+padding-top: 5px; 
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Gym Feedback Form</h1>
+  <form action="#" method="post">
+    <label for="gymname">Gym Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="location">Location Visited:</label>
+    <select id="location" name="location" required>
+      <option value="" disabled selected>Select a location</option>
+      <option value="location1">Location 1</option>
+      <option value="location2">Location 2</option>
+      <option value="location3">Location 3</option>
+    </select>
+
+    <label for="overall">Overall Experience (1-10):</label>
+    <input type="number" id="overall" name="overall" min="1" max="10" required>
+
+    <label for="cleanliness">Cleanliness of Facilities (1-10):</label>
+    <input type="number" id="cleanliness" name="cleanliness" min="1" max="10" required>
+
+    <label for="staff">Staff Friendliness and Knowledge (1-10):</label>
+    <input type="number" id="staff" name="staff" min="1" max="10" required>
+
+    <label for="equipment">Quality of Equipment (1-10):</label>
+    <input type="number" id="equipment" name="equipment" min="1" max="10" required>
+
+    <label for="fitness">Did you achieve your fitness goals during your visit?</label>
+    <input type="radio" id="yes" name="fitness" value="yes" required>
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="fitness" value="no" required>
+    <label for="no">No</label>
+
+    <label for="explanation">If no, please explain:</label>
+    <textarea id="explanation" name="explanation"></textarea>
+
+    <label for="comments">Additional Comments or Suggestions:</label>
+    <textarea id="comments" name="comments"></textarea>
+    <div class="submit" style="align-items: center;">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
